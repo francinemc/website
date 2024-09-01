@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.breadcrumb {
+    margin-top: 10px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+}
+
+.breadcrumb span {
+    color: #999;
+}
+
+.contact-section {
+    display: flex;
+    justify-content:space-around;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 300px;
+}
+
+.contact-info h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 15px;
+}
+
+.contact-info ul li strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-image {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.contact-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 300px;
+}
+
+.contact-form h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.checkbox {
+    display: flex;
+   
+    margin-bottom: 15px;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 10px; /* Adds space between the checkbox and the label */
+}
+
+.checkbox label {
+    margin: 0;
+    font-size: 12px;
+}
+
+.label {
+    display: inline-flex;
+}
+
+.checkbox a {
+    color: #333;
+    text-decoration: none;
+
+
+  
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}

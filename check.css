@@ -1,0 +1,248 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, table {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000bd;
+}
+
+header {
+    background-color: #121416; /* Dark gray */
+    color: #efc143; /* Warm yellow */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Info Section */
+.info-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    color: white;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if there isn't enough space */
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Increased padding for more space around each item */
+    border-bottom: 1px solid #dee2e6;
+    text-align: center;
+    margin: 0 20px; /* Increased spacing between items */
+}
+
+.info-item .icon-img {
+    font-size: 24px;
+    margin-bottom: 10px;
+    width: 50px; /* Width of the circular design */
+    height: 50px; /* Height of the circular design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Makes the number circular */
+    background-color: #eb7324; /* Background color of the circle */
+    color: #fff; /* Color of the number text */
+    font-weight: bold; /* Makes the number bold */
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: bold;
+}
+
+/* Cart Container */
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cart {
+    flex: 3;
+}
+
+.cart-content {
+    margin-bottom: 20px;
+}
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+
+.cart th, .cart td {
+    padding: 10px;
+    text-align: left;
+}
+
+.cart th {
+    background-color: #000000ae; /* Orange background for table header */
+    color: #ffffff; /* White text color for table header */
+}
+
+.total {
+    font-weight: bold;
+    text-align: right;
+    color: #121416; /* Dark gray */
+}
+
+.cart-summary {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h2 {
+    margin-bottom: 15px;
+    color: #121416; /* Dark gray */
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.summary-item span {
+    font-size: 1em;
+}
+
+.summary-item span:last-child {
+    font-weight: bold;
+}
+
+.checkout {
+    margin-top: 20px;
+}
+
+.checkout button {
+    background-color: #eb7324; /* Vibrant orange */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.checkout button:hover {
+    background-color: #efc143; /* Warm yellow */
+}
+
+.checkout select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Featured products section */
+.featured-products {
+    margin-top: 20px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product {
+    flex: 0 0 200px;
+    margin-right: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-info h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #121416; /* Dark gray */
+}
+
+.product-info p {
+    font-size: 1.1em;
+    color: #eb7324; /* Vibrant orange */
+}
+
+.product-info button {
+    background-color: #eb7324; /* Vibrant orange */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-info button:hover {
+    background-color: #efc143; /* Warm yellow */
+}
+
+/* Slider controls */
+.slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .cart-container {
+        flex-direction: column;
+    }
+
+    .cart-summary {
+        margin-top: 20px;
+    }
+
+    .slider-wrapper {
+        flex-direction: column;
+    }
+}
